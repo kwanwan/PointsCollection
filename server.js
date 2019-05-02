@@ -116,7 +116,7 @@ router.route('/loyalty/v1/points/:userid').post(function (request, response) {
                           responseBody = { points: 0 };
                           response.json(responseBody);
                           doRelease(connection);
-		                  }
+		      }
                   });
               } else {
                   console.log('points is not 3 after update, update now points only');
